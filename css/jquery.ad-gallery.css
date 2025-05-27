@@ -1,0 +1,211 @@
+.ad-gallery{
+width: 100%;
+}
+.ad-gallery, .ad-gallery *{
+margin: 0;
+padding: 0;
+}
+.ad-gallery .ad-image-wrapper{
+width: 100%;
+height: 1250px;
+margin-top: 0;
+position: relative;
+overflow: hidden;
+}
+.ad-gallery .ad-image-wrapper .ad-loader{
+position: absolute;
+z-index: 10;
+top: 48%;
+left: 48%;
+border: 1px solid #CCC;
+z-index: 20280;
+}
+.ad-gallery .ad-image-wrapper .ad-next,
+.ad-gallery .ad-image-wrapper .ad-prev{
+font-size: 0;
+line-height: 0;
+position: absolute;
+top: 45%;
+display: block;
+width: 40px;
+height: 40px;
+padding: 0;
+cursor: pointer;
+color: transparent;
+border: none;
+outline: none;
+background: transparent;
+z-index: 22200;
+}
+.ad-gallery .ad-image-wrapper .ad-prev:hover,
+.ad-gallery .ad-image-wrapper .ad-prev:focus,
+.ad-gallery .ad-image-wrapper .ad-next:hover,
+.ad-gallery .ad-image-wrapper .ad-next:focus{
+color: transparent;
+outline: none;
+background: transparent;
+}
+.ad-gallery .ad-image-wrapper .ad-prev:hover:before,
+.ad-gallery .ad-image-wrapper .ad-prev:focus:before,
+.ad-gallery .ad-image-wrapper .ad-next:hover:before,
+.ad-gallery .ad-image-wrapper .ad-next:focus:before{
+opacity: 1;
+}
+.ad-gallery .ad-image-wrapper .ad-prev:before,
+.ad-gallery .ad-image-wrapper .ad-next:before{
+font-family: 'slick';
+font-size: 40px;
+line-height: 1;
+opacity: .75;
+color: white;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.ad-gallery .ad-image-wrapper .ad-prev{
+left: 10px;
+}
+[dir='rtl'] .ad-gallery .ad-image-wrapper .ad-prev{
+right: 10px;
+left: auto;
+}
+.ad-gallery .ad-image-wrapper .ad-prev:before{
+content: '←';
+}
+[dir='rtl'] .ad-gallery .ad-image-wrapper .ad-prev:before{
+content: '→';
+}
+.ad-gallery .ad-image-wrapper .ad-next{
+right: 10px;
+}
+[dir='rtl'] .ad-gallery .ad-image-wrapper .ad-next{
+right: auto;
+left: 10px;
+}
+.ad-gallery .ad-image-wrapper .ad-next:before{
+content: '→';
+}
+[dir='rtl'] .ad-gallery .ad-image-wrapper .ad-next:before{
+content: '←';
+}
+.ad-gallery .ad-image-wrapper .ad-image{
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+z-index: 20009;
+}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description{
+position: absolute;
+bottom: 0px;
+left: 0px;
+padding: 2%;
+text-align: left;
+width: 100%;
+z-index: 20002;
+background: url(ad/opa75.png);
+color: #000;
+}
+* html .ad-gallery .ad-image-wrapper .ad-image .ad-image-description{
+background: none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='ad/opa75.png');
+}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title{
+display: block;
+}
+.ad-gallery .ad-nav{
+top: 70%;
+width: 100%;
+display: block;
+position: absolute;
+right: 20px;
+z-index: 21000;
+}
+.ad-gallery .ad-forward, .ad-gallery .ad-back{
+position: absolute;
+top: 0;
+height: 100%;
+z-index: 20010;
+}
+/* IE 6 doesn't like height: 100% */
+* html .ad-gallery .ad-forward, .ad-gallery .ad-back{
+height: 100px;
+}
+.ad-gallery .ad-nav .ad-thumbs{
+overflow: hidden;
+width: 100%;
+}
+.ad-gallery .ad-thumbs ul{
+float: left;
+list-style: none;
+width: 700px !important;
+margin-left: 420px;
+}
+.ad-gallery .ad-thumbs li{
+float: left;
+padding-left: 10px;
+}
+.ad-gallery .ad-thumbs li a{
+display: block;
+background-color: #555;
+border: 3px solid #000;
+}
+.ad-gallery .ad-thumbs li a img{
+display: block;
+}
+.ad-gallery .ad-thumbs li a.ad-active{
+border: 3px solid #fff;
+}
+/* Can't do display none, since Opera won't load the images then */
+.ad-preloads{
+position: absolute;
+left: -9000px;
+top: -9000px;
+}
+@media screen and (orientation: portrait){
+.ad-gallery .ad-nav{
+display: none;
+}
+.ad-gallery .ad-image-wrapper{
+width: 100vw;
+height: 67vw;
+margin-top: -1vw;
+position: relative;
+overflow: hidden;
+}			
+}
+@media screen and (min-width: 1025px){
+.ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image{
+top: 40%;
+}
+.ad-gallery .ad-nav{
+top: 75%;
+}
+.ad-gallery .ad-thumbs ul{
+margin-left: 560px;
+}
+}
+@media screen and (min-width: 1280px){
+.ad-gallery .ad-nav{
+top: 64%;
+}
+.ad-gallery .ad-thumbs ul{
+margin-left: 600px;
+}
+}
+@media screen and (min-width: 1450px){
+.ad-gallery .ad-nav{
+top: 67%;
+}
+.ad-gallery .ad-thumbs ul{
+margin-left: 700px;
+width: 800px !important;
+}
+}
+@media screen and (min-width: 1600px){
+.ad-gallery .ad-nav{
+top: 75%;
+}
+.ad-gallery .ad-thumbs ul{
+margin-left: 800px;
+}
+}

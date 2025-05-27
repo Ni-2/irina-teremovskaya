@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Anglecia Pro Tit';
+    src: local('Anglecia Pro Title Italic'), local('AngleciaProTitle-Italic'), url('Angleciaprotitleitalic.woff2') format('woff2'), url('Angleciaprotitleitalic.woff') format('woff'), url('Angleciaprotitleitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Anglecia Pro Tit';
+    src: local('Anglecia Pro Title Regular'), local('AngleciaProTitle-Regular'), url('Angleciaprotitleregular.woff2') format('woff2'), url('Angleciaprotitleregular.woff') format('woff'), url('Angleciaprotitleregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

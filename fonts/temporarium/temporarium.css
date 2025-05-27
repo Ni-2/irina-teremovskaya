@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Temporarium';
+    src: local('Temporarium'), url('temporarium.woff2') format('woff2'), url('temporarium.woff') format('woff'), url('temporarium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Temporarium';
+    src: local('Temporarium Italic'), local('Temporarium-Italic'), url('temporariumitalic.woff2') format('woff2'), url('temporariumitalic.woff') format('woff'), url('temporariumitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}

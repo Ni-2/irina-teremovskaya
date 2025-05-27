@@ -1,0 +1,133 @@
+.es-nav span {
+	position: absolute;
+	top: 525px;
+	display: none;
+	outline: none;
+	text-align: left;
+	z-index: 1000;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	text-indent: -9000px;
+	cursor: pointer;
+}
+
+.es-nav span.es-nav-prev {
+	left: -25px;
+}
+
+.es-nav span.es-nav-next {
+	right: -65px;
+}
+
+.es-nav span svg {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.es-nav .icon-wrap {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 25px;
+}
+
+.icon-wrap {
+	position: absolute;
+	display: block;
+}
+
+.es-nav {
+	opacity: 0.6;
+}
+
+.es-nav span::before,
+.es-nav span::after,
+.es-nav .icon-wrap::before,
+.es-nav .icon-wrap::after {
+	position: absolute;
+	left: 50%;
+	width: 3px;
+	height: 50%;
+	background-color: #222;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.es-nav .icon-wrap::before,
+.es-nav .icon-wrap::after {
+	z-index: 100;
+	height: 0;
+	background: #fff;
+	-webkit-transition: height 0.3s, -webkit-transform 0.3s;
+	transition: height 0.3s, transform 0.3s;
+}
+
+.es-nav span::before,
+.es-nav .icon-wrap::before {
+	top: 50%;
+	-webkit-transform: translateX(-50%) rotate(-160deg);
+	transform: translateX(-50%) rotate(-160deg);
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.es-nav span.es-nav-next::before,
+.es-nav span.es-nav-next .icon-wrap::before {
+	-webkit-transform: translateX(-50%) rotate(160deg);
+	transform: translateX(-50%) rotate(160deg);
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.es-nav span::after,
+.es-nav .icon-wrap::after {
+	top: 50%;
+	-webkit-transform: translateX(-50%) rotate(-20deg);
+	transform: translateX(-50%) rotate(-20deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.es-nav span.es-nav-next::after,
+.es-nav span.es-nav-next .icon-wrap::after {
+	-webkit-transform: translateX(-50%) rotate(20deg);
+	transform: translateX(-50%) rotate(20deg);
+	-webkit-transform-origin: 100% 0%;
+	transform-origin: 100% 0%;
+}
+
+.es-nav span:hover .icon-wrap::before,
+.es-nav span:hover .icon-wrap::after {
+	height: 50%;
+}
+
+.es-nav span:hover::before,
+.es-nav span:hover .icon-wrap::before {
+	-webkit-transform: translateX(-50%) rotate(-130deg);
+	transform: translateX(-50%) rotate(-130deg);
+}
+
+.es-nav span.es-nav-next:hover::before,
+.es-nav span.es-nav-next:hover .icon-wrap::before {
+	-webkit-transform: translateX(-50%) rotate(130deg);
+	transform: translateX(-50%) rotate(130deg);
+}
+
+.es-nav span:hover::after,
+.es-nav span:hover .icon-wrap::after {
+	-webkit-transform: translateX(-50%) rotate(-50deg);
+	transform: translateX(-50%) rotate(-50deg);
+}
+
+.es-nav span.es-nav-next:hover::after,
+.es-nav span.es-nav-next:hover .icon-wrap::after {
+	-webkit-transform: translateX(-50%) rotate(50deg);
+	transform: translateX(-50%) rotate(50deg);
+}
