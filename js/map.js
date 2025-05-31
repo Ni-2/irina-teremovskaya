@@ -7,19 +7,19 @@ function init() {
 		controls: [],
 	});
 
-	var myPlacemark = new ymaps.GeoObject({
+	myPlacemark = new ymaps.GeoObject({
 		geometry: { type: 'Point', coordinates: [61.78989282985466, 34.37863160089869] },
 		properties: {
-			iconContent: 'Художественная студия Ирины Теремовской (на Куйбышева)',
+			iconContent: 'Художественная студия Ирины Теремовской (Куйбышева)',
 			hintContent: 'ул. Куйбышева 10, 5 подъезд (домофон 1), г. Петрозаводск, республика Карелия',
 		},
 	}, { preset: 'islands#blueStretchyIcon' });
 
-	var myPlacemark2 = new ymaps.GeoObject({
-		geometry: { type: 'Point', coordinates: [61.765526, 34.315428] },
+	myPlacemark2 = new ymaps.GeoObject({
+		geometry: { type: 'Point', coordinates: [61.768156, 34.308637] },
 		properties: {
-			iconContent: 'Художественная студия Ирины Теремовской (на Лососинском ш.)',
-			hintContent: 'Лососинское шоссе 26 (ТЦ Столица), 2 этаж, пом. 23 (вход со стороны Березовой аллеи),' +
+			iconContent: 'Художественная студия Ирины Теремовской (Древлянка)',
+			hintContent: 'улица Древлянка, 18А, 2 этаж' +
 			' г. Петрозаводск, республика Карелия',
 		},
 	}, { preset: 'islands#blueStretchyIcon' });
