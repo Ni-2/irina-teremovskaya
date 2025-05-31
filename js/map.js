@@ -26,8 +26,8 @@ function init() {
 	
 	myMap.geoObjects.add(myPlacemark);
 	myMap.geoObjects.add(myPlacemark2);
-	myMap.controls.add('zoomControl', { size: 'small', position: { top: 860, left: 10 }	});
-	myMap.controls.add('geolocationControl', { position: { top: 820, left: 10 } });
-	myMap.controls.add('routeEditor', {	position: { top: 934, left: 10 } });
+	myMap.controls.add('geolocationControl', { position: { bottom: 294, left: 10 } });
+	myMap.controls.add('zoomControl', { size: 'small', position: { bottom: 220, left: 10 }	});
+	myMap.controls.add('routeEditor', {	position: { bottom: 180, left: 10 } });
 	myMap.behaviors.disable('scrollZoom');
 }
